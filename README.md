@@ -20,8 +20,18 @@ You have been asked to create an application that will show all affected Supplie
      dotnet add package GraphQL.Client
      dotnet add package GraphQL.Client.Serializer.Newtonsoft
      ```
+3. **Add the Azure CLI software and log in to your subscription**:
 
-3. **Modify the `Program.cs` file**:
+In some cases you may need to have the Azure CLI tool available and log in using its commands to set the security context properly if you have multiple subscriptions. Note: If you are running on a system other than Microsoft Windows, you can [check this reference for installation steps](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli). 
+
+   - Run the following commands to add the required software and log in:
+     ```bash
+     winget install -e --id Microsoft.AzureCLI
+     az login
+     ```
+If prompted, select the Subscription ID you used to create the tutorial assets. 
+
+4. **Modify the `Program.cs` file**:
    - Open the `Program.cs` file and replace its content with the following code:
 ```csharp
 /* Program.cs
@@ -186,14 +196,14 @@ app.MapGet("/graphql", async context =>
 app.Run();
 ```
 
-4. **Copy Graphics File**:
-   - Optionally, you can overwrite the included *Contoso.png* image file in this solution in the following directory:
+5. **Copy Graphics File**:
+   - Optionally, you place any PNG graphic with the name *Contoso.png* image file in this solution in the following directory:
      ```bash
      /wwwroot
      ```
+     
 
-
-5. **Run the application**:
+6. **Run the application**:
    - In the terminal or command prompt, run the following command to start the application:
      ```bash
      dotnet run
