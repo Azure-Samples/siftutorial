@@ -2,7 +2,7 @@
 
 This application is part of the [SQL database In Fabric tutorial](https://aka.ms/fabric-sql-tutorial). In this step you will create the application for the GraphQL Endpoint you created in the SQL In Fabric tutorial. So far in the tutorial you have created a database which stores the sales and products for Contoso, and added suppliers and joining entities using Transact-SQL (T-SQL). You now wish to allow developers to use the data without having to learn T-SQL, and also enable them to query multiple Microsoft Fabric components in a single interface. 
 
-You have been asked to create an application that will show all affected Suppliers if a Location has a supply chain break, due to natural disasters or other interruptions. This code shows how to create an ASP.NET application that uses a GraphQL Query to access a Query in the SQL database In Fabric GraphQL endpoint you created in the last section of the tutorial. You will need to [install the .NET Framework, version 8.0 or higher](https://dotnet.microsoft.com/en-us/download/dotnet-framework) for this section.
+You have been asked to create an application that will show all affected Suppliers if a Location has a supply chain break, due to natural disasters or other interruptions. This code shows how to create an ASP.NET application that uses a GraphQL Query to access a Query in the SQL database In Fabric GraphQL endpoint you created in the last section of the tutorial. You will need to [install the .NET SDK, version 8.0 or higher](https://dotnet.microsoft.com/en-us/download) for this section.
 
 1. **Create a new ASP.NET Core Web Application**:
    - Open a terminal or command prompt.
